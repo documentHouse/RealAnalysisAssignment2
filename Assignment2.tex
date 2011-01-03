@@ -32,11 +32,32 @@
 \rule{500pt}{1pt}\\
 \end{flushleft} 
 
+We would like to show that the sentence $'\emptyset \subset A'$ is true where $A$ is any set. This is equivalent to the assertion that the empty set is the subset of any set. To this end we are to show that $x \in \emptyset$ implies $x \in A$. We know however that $x \in \emptyset$ is false for any $x$ therefore the sentence  $x \in \emptyset \implies x \in A$ is trivially true. This means that the sentence  $'\emptyset \subset A'$ is true.
+
+
 \vspace{15pt}
 \begin{flushleft} 
 \textbf{Class 18.100B} - Problem 2\\
 \rule{500pt}{1pt}\\
 \end{flushleft} 
+
+To show that $||x| - |y|| \le |x - y|$ we need to show that both $|x| - |y| \le |x - y|$ and \\$-(|x| - |y|) = |y| - |x| \le |x - y|$ from the definition of the absolute value. We show the first as follows
+
+\begin{eqnarray*}
+|x| &=& |x - y + y| \\
+|x| &\le& |x - y| + |y| \quad \text{by the triangle inequality}
+\end{eqnarray*}
+so we have $|x| \le |x - y| + |y|$ which implies $|x| -|y| \le |x - y| $ which gives the first part of the theorem. Therefore we calculate as follows:
+
+For the second part we note that $|x| = |-x|$ from the definition of absolute value.
+
+\begin{eqnarray*}
+|y| &=& |y - x + x| \\
+|y| &\le& |y - x| + |x| \quad \text{by the triangle inequality} \\
+|y| &\le& |-(x - y)| + |x| \\
+|y| &\le& |x - y| + |x| \quad \text{from the definition of absolute value}
+\end{eqnarray*}
+so we have $|y| \le |x - y| + |x|$ which implies $|y| -|x|  = -(|x|-|y|) \le |x - y| $ which gives the second part of the theorem. 
 
 \vspace{15pt}
 \begin{flushleft} 
