@@ -129,4 +129,5 @@ S = \{ 30,42,54,66, 70,78,90,102,105,110,114,126,130,135,138,154,165,170,174,186
 \rule{500pt}{1pt}\\
 \end{flushleft} 
 
+In order to show that $E^{\circ}$ is open we need to show that each point of $E^{\circ}$ is itself an interior point. Consider $x \in E^{\circ}$, by definition this means that there is a neighborhood around $N$ around $x$  such that $N_r(x) \subset E^{\circ}$. Let's pick a $y \in N_r(x)$ and let $d(x,y) = d$, then the neighborhood $N_{r-d}(y)Ê\subset N_r(x)$. This is so because if $z \in N_{r-d}(y)$ then $d(z,y) < r - d$ but $d(y,x) = d$ so $d(z,x) \le d(z,y) + d(y,x) = r - d + d \implies d(z,x) < r$ then $z \in N_r(x)$. This shows that if $x \in E^{\circ}$ and $y \in N_r(x)$ then there is a neighborhood $N_q(y)$ such that $N_q(y) \subset N_r(x) \subset E$, in other words $y$ is also an interior point ($y \in E^{\circ}$). This shows then that $N_r(x) \subset E^{\circ}$, so $E^{\circ}$ is open.
 \end{document}  
