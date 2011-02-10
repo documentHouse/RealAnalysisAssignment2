@@ -59,17 +59,56 @@ For the second part we note that $|x| = |-x|$ from the definition of absolute va
 \end{eqnarray*}
 so we have $|y| \le |x - y| + |x|$ which implies $|y| -|x|  = -(|x|-|y|) \le |x - y| $ which gives the second part of the theorem. 
 
+\newpage
 \vspace{15pt}
 \begin{flushleft} 
 \textbf{Class 18.100B} - Problem 3\\
 \rule{500pt}{1pt}\\
 \end{flushleft} 
 
+\noindent Part a) $M = \lbrace \frac{|x|}{1 + |x|} : x \in \mathbb{R} \rbrace $
+\vspace{10pt}
+
+We start by noting that $0 \le |x|$ also $|x| < |x| + 1$ so $0 \le |x| < |x| + 1 \implies 0 \le \frac{|x|}{1+ |x|}$. Since when $x = 0$ we also have $ \frac{|x|}{1+ |x|} = 0$ then inf $M$ = 0. 
+
+For the supremum we note that $|x| < |x| + 1 \implies \frac{|x|}{|x|+1} < 1$ that is, $M$ is bounded by 1. For any $\epsilon$ there exists $|x|$ such that $0 < \frac{1}{\epsilon} < |x|$ this implies that $\frac{1}{\epsilon} < |x| + 1$ so $\frac{1}{|x| + 1} < \epsilon$ but then $1 - \frac{1}{|x| + 1}  > 1 - \epsilon$ so we have $\frac{|x|}{|x| + 1}  > 1 - \epsilon$, which is to say any real less than 1 is not an upper bound for $M$. This means that sup $M$ = 1.
+
+\vspace{10pt}
+\noindent Part b) $M = \lbrace \frac{x}{1 + x} : x > -1 \rbrace $
+\vspace{10pt}
+
+\noindent Part c) $M = \lbrace x + \frac{1}{x} : \frac{1}{2} < x < 2 \rbrace $
+\vspace{10pt}
+
 \vspace{15pt}
 \begin{flushleft} 
 \textbf{Class 18.100B} - Problem 4\\
 \rule{500pt}{1pt}\\
 \end{flushleft} 
+
+We can take the set $S = A \cap B \cap C$ to mean $S$ the set which has the properties of all three sets. First, this means that $S$ will only contain positive integers less or equal to 200. Second, of those 200 integers we only pick those that are expressed as a product of exactly three primes. Finally, because we require that the integer is not divisible by a square then none of the three prime numbers can be equal. Our set $S$ is then the collection of integers less than 200 which are expressed as the product of three different primes.
+
+The lowest two primes are 2 and 3, therefore the highest prime that we can use to produce an integer less than 200 is 31. We then proceed by picking the next lowest prime and finding all the distinct prime triples that keep the product under 200. This is easy since we only check (2,3,29) and (2,5,29) to see that (2,3,29) is the only possible prime triple that has a produce less than 200 . We proceed in this manner incrementally checking the small set of possible triples to produce the following set of values.
+\vspace{10pt}
+
+\begin{tabular}{c c c}
+(2,3,31) & (2,3,11) & (2,5,7)\\
+(2,3,29) & (2,5,11) & (3,5,7)\\
+(2,3,23) & (3,5,11)& (2,3,5)\\
+(2,3,19) & (2,7,11) & \\
+(2,5,19) & (2,3,9) & \\
+(2,3,17) & (2,5,9) & \\
+(2,5,17) & (3,5,9) & \\
+(2,3,13) & (2,7,9) & \\
+(2,5,13) & (3,7,9) & \\
+(3,5,13) & (2,3,7) & \\
+\end{tabular}
+
+\vspace{10pt}
+Prime decompositions are unique which allows us to translate the table above into an explicit definition of S:
+\[
+S = \{ 30,42,54,66, 70,78,90,102,105,110,114,126,130,135,138,154,165,170,174,186,189,190,195 \}
+\]
 
 \vspace{15pt}
 \begin{flushleft} 
