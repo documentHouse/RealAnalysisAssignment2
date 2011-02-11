@@ -77,6 +77,15 @@ For the supremum we note that $|x| < |x| + 1 \implies \frac{|x|}{|x|+1} < 1$ tha
 \noindent Part b) $M = \lbrace \frac{x}{1 + x} : x > -1 \rbrace $
 \vspace{10pt}
 
+Suppose that $x',x > -1$ in other words $x' + 1 > 0$ and $x + 1 > 0$. Now consider the difference in  two elements of $M$.
+\begin{eqnarray*}
+\frac{x'}{1 + x'} - \frac{x}{1 + x} &=& \frac{(1 + x)x' - (1 + x')x}{(1+x')(1 + x)}\\
+ 					      &=& \frac{x' - x}{(1+x')(1+x)}					  
+\end{eqnarray*}
+
+It is clear by the opening inequalities that the denominator is positive. If we assume that $x' > x$ then $x' - x > 0$ which shows that $\frac{x'}{1 + x'}  - \frac{x}{1 + x} > 0$. This means that $x' > x \implies \frac{x'}{1 + x'}  > \frac{x}{1 + x}$ which is to say that elements in $M$ increase for increasing $x$. By the arguments in part a then we see that sup $M$ = 1.
+
+\vspace{10pt}
 \noindent Part c) $M = \lbrace x + \frac{1}{x} : \frac{1}{2} < x < 2 \rbrace $
 \vspace{10pt}
 
@@ -139,6 +148,6 @@ S = \{ 30,42,54,66, 70,78,90,102,105,110,114,126,130,135,138,154,165,170,174,186
 \indent The first part of the 'if and only if', that is the part of theorem that says $E^{\circ} = E \implies E$ is open is shown by part a since $E^{\circ}$ is open. The second part of the 'if and only if' is $E$ is open $\implies E^{\circ} = E$. From the definition of $E^{\circ}$ if $x \in E^{\circ}$ then $x \in E$ so $E^{\circ} \subset E$. Suppose that $x \in E$ then since $E$ is open there is a neighborhood $N(x) \subset E$ this means however that $x \in E^{\circ}$ so $E \subset E^{\circ}$ therefore $E^{\circ} = E$.\\
 
 \noindent Part c) \\
-
+\indent Because $G$ is open we know that $\exists x \in G$ such that $N(x) \subset G$, where $N(x)$ is a neighborhood. Since $G \subset E$ then we have $N(x) \subset E$ this implies that $x \in E^{\circ}$ therefore $G \subset E^{\circ}$
 
 \end{document}  
