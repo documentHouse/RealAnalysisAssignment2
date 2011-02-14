@@ -85,12 +85,38 @@ Suppose that $x',x > -1$ in other words $x' + 1 > 0$ and $x + 1 > 0$. Now consid
 
 It is clear by the opening inequalities that the denominator is positive. If we assume that $x' > x$ then $x' - x > 0$ which shows that $\frac{x'}{1 + x'}  - \frac{x}{1 + x} > 0$. This means that $x' > x \implies \frac{x'}{1 + x'}  > \frac{x}{1 + x}$ which is to say that elements in $M$ increase for increasing $x$. By the arguments in part a then we see that sup $M$ = 1.
 
+\indent To show that the set is unbounded below we by using the density of the rationals to say that for any $N$ where $0 < N$ there exists an $x$ such that  $0 < x +1 < \frac{1}{1+N}$ where $x > -1$ by hypothesis. We now proceed with the following algebra
+
+\begin{eqnarray*}
+x +1&<& \frac{1}{1+N} \\
+x +1&<& 1 - \frac{N}{1+N} \\
+x&<&- \frac{N}{1+N} \\
+x+x N&<&-N \\
+x&<&-N -N x\\
+x&<&-N(1+ x)\\
+\frac{x}{1+x}&<&-N\\
+\end{eqnarray*}
+
+This says that for any $-N$ not matter how large there is an $x$ such that $\frac{x}{1+x}$ is less than this value. For $M$ to be bounded below would necessarily be a contradiction therefore inf $M$ = $-\infty$
+
 \vspace{10pt}
 \noindent Part c) $M = \lbrace x + \frac{1}{x} : \frac{1}{2} < x < 2 \rbrace $
 \vspace{10pt}
 
-To find the inf $M$ we note that $(\sqrt{x} - \frac{1}{\sqrt{x}})^2 \ge 0$ by the properties of squares in $\mathbb{R}$. This then implies that $x - 2 + \frac{1}{x} \ge 0 \implies x + \frac{1}{x} \ge 2$. This is to say that elements in $M$ are bounded below by 2. Since we have $x + \frac{1}{x} = 2$ for $x = 1$ then we must have inf $M$ = 2.
+To find the inf $M$ we note that $(\sqrt{x} - \frac{1}{\sqrt{x}})^2 \ge 0$ by the properties of squares in $\mathbb{R}$. This then implies that $x - 2 + \frac{1}{x} \ge 0 \implies x + \frac{1}{x} \ge 2$. This is to say that elements in $M$ are bounded below by 2. Since we have $x + \frac{1}{x} = 2$ for $x = 1$ then we must have inf $M$ = 2. 
 
+To find the supremum we perform the following calculation with the assumpion that $x' >x$:
+
+\begin{eqnarray*}
+x'+\frac{1}{x'} - (x + \frac{1}{x})&=&\frac{x'^2 + 1}{x'} - \frac{x^2+1}{x} \\
+					      &=&\frac{x (x'^2 + 1) - x'(x^2 + 1)}{x' x} \\
+					      &=&\frac{x x'^2 - x' x^2 - (x' - x)}{x' x} \\
+					      &=&\frac{x x'(x' -x)-(x' - x)}{x' x} \\
+					      &=&\frac{(x x' - 1)(x' - x)}{x' x}
+\end{eqnarray*}
+
+From the hypothesis that $\frac{1}{2} < x < 2$ and $x' > x$ it is clear that whether that final expression is positive or negative depends on the value of ($x' x - 1$). From the calculation it is clear then that $x'+\frac{1}{x'} > x + \frac{1}{x}$ if $x',x > 1$ and $x'+\frac{1}{x'} < x + \frac{1}{x}$ if $x',x < 1$. This means that we must decrease from a maximum at $x = \frac{1}{2}$ and rise to another maximum at $x = 2$. Since these two values are the same our supremum is \\sup $M$ = $\frac{5}{2}$.
+ 
 \vspace{15pt}
 \begin{flushleft} 
 \textbf{Class 18.100B} - Problem 4\\
