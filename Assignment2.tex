@@ -153,6 +153,9 @@ S = \{ 30,42,54,66, 70,78,90,102,105,110,114,126,130,135,138,154,165,170,174,186
 \rule{500pt}{1pt}\\
 \end{flushleft} 
 
+We are being asked to show that there is a 1-1 correspondence $g$ such that $g: Z \to \mathbb{R}$. Since $X \backsim \mathbb{R}$ and $Y \backsim \mathbb{N}$  we know there is $\delta:X \to \mathbb{R}$ and $\delta':Y \to \mathbb{N}$ that are 1-1. Because $\delta \delta' (Z) = \delta \delta' (X \cup Y) = \delta(X)\cup \delta'(Y)  = \mathbb{R} \cup \mathbb{N}$, our goal is reduced to finding a 1-1 function $g$ such $g:\mathbb{R} \cup \mathbb{N} \to \mathbb{R}$ 
+
+
 \vspace{15pt}
 \begin{flushleft} 
 \textbf{Class 18.100B} - Problem 6\\
@@ -168,7 +171,7 @@ S = \{ 30,42,54,66, 70,78,90,102,105,110,114,126,130,135,138,154,165,170,174,186
 
 
 \noindent Part a) \\
-\indent In order to show that $E^{\circ}$ is open we need to show that each point of $E^{\circ}$ is itself an interior point. Consider $x \in E^{\circ}$, by definition this means that there is a neighborhood around $N$ around $x$  such that $N_r(x) \subset E^{\circ}$. Let's pick a $y \in N_r(x)$ and let $d(x,y) = d$, then the neighborhood $N_{r-d}(y)Ê\subset N_r(x)$. This is so because if $z \in N_{r-d}(y)$ then $d(z,y) < r - d$ but $d(y,x) = d$ so $d(z,x) \le d(z,y) + d(y,x) = r - d + d \implies d(z,x) < r$ then $z \in N_r(x)$. This shows that if $x \in E^{\circ}$ and $y \in N_r(x)$ then there is a neighborhood $N_q(y)$ such that $N_q(y) \subset N_r(x) \subset E$, in other words $y$ is also an interior point ($y \in E^{\circ}$). This shows then that $N_r(x) \subset E^{\circ}$, so $E^{\circ}$ is open.\\
+\indent In order to show that $E^{\circ}$ is open we need to show that each point of $E^{\circ}$ is itself an interior point. Consider $x \in E^{\circ}$, by definition this means that there is a neighborhood around $N$ around $x$  such that $N_r(x) \subset E$. Let's pick a $y \in N_r(x)$ and let $d(x,y) = d$, then the neighborhood $N_{r-d}(y)Ê\subset N_r(x)$. This is so because if $z \in N_{r-d}(y)$ then $d(z,y) < r - d$ but $d(y,x) = d$ so $d(z,x) \le d(z,y) + d(y,x) = r - d + d \implies d(z,x) < r$ then $z \in N_r(x)$. This shows that if $x \in E^{\circ}$ and $y \in N_r(x)$ then there is a neighborhood $N_q(y)$ such that $N_q(y) \subset N_r(x) \subset E$, in other words $y$ is also an interior point ($y \in E^{\circ}$). This shows then that $N_r(x) \subset E^{\circ}$, so $E^{\circ}$ is open.\\
 
 \noindent Part b) \\
 \indent The first part of the 'if and only if', that is the part of theorem that says $E^{\circ} = E \implies E$ is open is shown by part a since $E^{\circ}$ is open. The second part of the 'if and only if' is $E$ is open $\implies E^{\circ} = E$. From the definition of $E^{\circ}$ if $x \in E^{\circ}$ then $x \in E$ so $E^{\circ} \subset E$. Suppose that $x \in E$ then since $E$ is open there is a neighborhood $N(x) \subset E$ this means however that $x \in E^{\circ}$ so $E \subset E^{\circ}$ therefore $E^{\circ} = E$.\\
