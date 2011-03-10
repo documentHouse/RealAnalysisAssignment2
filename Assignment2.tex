@@ -159,7 +159,7 @@ hj(Z) &=& hj(X \cup Y) = h(j(X) \cup j(Y)) \\
          &=& h(\mathbb{R} \cup \mathbb{N})\\
          &=& \mathbb{R}
 \end{eqnarray*}
-Since the function $j$ is given, being derived from the 1-1 correspondences between $X$, $Y$ and $\mathbb{R}$, $\mathbb{N}$ respectively we need only to find the function $h$, 1-1 correspondence between $\mathbb{R} \cup \mathbb{N}$ and $\mathbb{R}$. Once found then $g = hj$ will be our 1-1 correspondence between $Z$ and $\mathbb{R}$.
+Since the function $j$ is given, being derived from the 1-1 correspondences between $X$, $Y$ and $\mathbb{R}$, $\mathbb{N}$ respectively we need only to find the function $h$, the 1-1 correspondence between $\mathbb{R} \cup \mathbb{N}$ and $\mathbb{R}$. Once found then $g = hj$ will be our 1-1 correspondence between $Z$ and $\mathbb{R}$.
 
 Let $h: \mathbb{R} \cup \mathbb{N} \to \mathbb{R}$ be defined as follows:\\
 \begin{eqnarray*}
@@ -176,12 +176,12 @@ The first two lines in the description of the function cover the mapping from $\
 \rule{500pt}{1pt}\\
 \end{flushleft} 
 
-\noindent Part a) For the first part we need to find a set that has three limit points,. If we let $A_1 = \{-1 + \frac{1}{n} \}$, $A_2 = \{0 + \frac{1}{n} \}$, $A_3 = \{1 + \frac{1}{n} \}$ with $n \in \mathbb{N}$ it is clear that the limit points of these sets are \{-1,0,1\} respectively. Since it is also clear that $A_1\cap A_2 \cap A_3 = \emptyset$
- then \{-1,0,1\} are the only limit points of the set $A = A_1 \cup A_2 \cup A_3$. (That previous assertion about noninsection implying no other limit points might be false.)
+\noindent Part a) For the first part we need to find a set that has three limit points,. If we let $A_1 = \{-1 + \frac{1}{n} \}$, $A_2 = \{0 + \frac{1}{n} \}$, $A_3 = \{1 + \frac{1}{n} \}$ with $n \in \mathbb{N}$ it is clear that the limit points of these sets are \{-1,0,1\} respectively. Lastly we should show that $A = A_1 \cup A_2 \cup A_3$ has no other limit points. Because we know that $\overline{A} \cup \overline{B} = \overline{A \cup B}$ and by extension that $\overline{A} \cup \overline{B} \cup \overline{C} = \overline{A \cup B \cup C}$ we know that there is no limit point in $A$ that is not in $A_1$,$A_2$, or $A_3$ for otherwise  $\overline{A} \cup \overline{B} \cup \overline{C} \nsupseteq \overline{A \cup B \cup C}$.
  
 \vspace{10pt}
 \noindent Part b) Consider the set $A = \{ \frac{1}{n} +  \frac{1}{m} | \; n, m \in \mathbb{N} \}$. For $n = n'$ held constant it is clear that we have a subset of $A$ such that its limit point is $\frac{1}{n'}$. This is true for any value of $n$ so there is a 1-1 correspondence between these limit points and $\mathbb{N}$ through the function $f(\frac{1}{n'}) = n'$ for each $n' \in \mathbb{N}$. This shows that there is at least a countable number of limit points in $A$. If we can show that these are the only limit points then we will have shown there is a bounded set with a countable number of limit points. \\
-\indent Since $\frac{1}{n} + \frac{1}{m} > 0 $ for all $n$ and $m$ there is no limit point less than 0. Now suppose that $n,m \ge 2$ then $\frac{1}{n} + \frac{1}{m} \le 1$. In this case there can be no limit point greater than 1 for there must be a neighborhood around such a limit point $x$ such that $1 < x - \epsilon$ but since $\frac{1}{n} + \frac{1}{m} \le 1$ there are no points in the neighborhood which contradicts there being a limit point greater than 1. So, we must have either $n = 1$ or $m = 1$,  in either case the limit is 1, therefore their are no limits greater than one. We must now show that there are no limit points in the intervals $(\frac{1}{n},\frac{1}{n-1})$
+\indent Since $\frac{1}{n} + \frac{1}{m} > 0 $ for all $n$ and $m$ there is no limit point less than 0. Now suppose that $n,m \ge 2$ then $\frac{1}{n} + \frac{1}{m} \le 1$. In this case there can be no limit point greater than 1 for there must be a neighborhood around such a limit point $x$ such that $1 < x - \epsilon$ but since $\frac{1}{n} + \frac{1}{m} \le 1$ there are no points in the neighborhood which contradicts there being a limit point greater than 1. So, we must have either $n = 1$ or $m = 1$,  in either case the limit is 1, therefore their are no limits greater than one. We must now show that there are no limit points in the intervals $(\frac{1}{n},\frac{1}{n-1})$.\\
+\indent Let $M = \{ (n,m) \; | \; n,m \in \mathbb{N} \}$,  now suppose there is limit point $x \in (\frac{1}{n},\frac{1}{n-1})$.
 
 
 \vspace{15pt}
